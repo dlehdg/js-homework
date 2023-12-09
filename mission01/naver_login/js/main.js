@@ -1,6 +1,6 @@
 const user = {
   id: "asd@naver.com",
-  pw: "spdlqj123!@",
+  pw: "asd123456@",
 };
 
 /*
@@ -14,7 +14,11 @@ const user = {
 
 const email = document.querySelector(".user-email-input");
 
-const password = document.querySelector(".user-password");
+const password = document.querySelector(".user-password-input");
+
+// const loginButton = document.querySelector(".btn-login");
+
+const inputForm = document.querySelector(".login-form");
 
 function emailReg(text) {
   const re =
@@ -51,4 +55,22 @@ password.addEventListener("input", (e) => {
     console.log(pwReg(e.target.value));
     password.classList.add("is--invalid");
   }
+});
+
+// console.log(user.id);
+
+inputForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const data = {
+    id: email.value,
+    pw: password.value,
+  };
+
+  // console.log(user.id);
+
+  if (user.id === data.id && user.pw === data.pw) {
+    window.location.href = "welcome.html";
+  }
+
+  console.log(data.id, data.pw);
 });
