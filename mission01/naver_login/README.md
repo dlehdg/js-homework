@@ -7,6 +7,17 @@
 
 ---
 
+
+<h2>✏사용된 기술</h2>
+<br>
+
+<img alt="Html" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/> <img alt="Css" src ="https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/>  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
+<br>
+
+
+---
+
+
 <h2> 요구사항 </h2>
 
 - [x] email 정규표현식을 사용한 조건처리
