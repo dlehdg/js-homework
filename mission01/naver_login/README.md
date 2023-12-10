@@ -1,4 +1,10 @@
-# 네이버 로그인 페이지 구현
+<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=header" />
+
+<h1>네이버 로그인 페이지 구현 </h1>
+
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=BDBDC8&height=150&section=footer" />
+
 
 ---
 
@@ -54,6 +60,9 @@
     });
 
 
+<br>
+
+
 dom api를 사용해 가져온 email 요소에 들어온 값이 해당하는 정규표현식 조건에 따라 클래스 이름이 추가 or 제거 되는 코드를 작성
 
 
@@ -100,7 +109,6 @@ dom api를 사용해 가져온 email 요소에 들어온 값이 해당하는 정
 <br>
 
     
-
 
 
 
