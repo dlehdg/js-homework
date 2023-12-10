@@ -85,9 +85,9 @@ dom api를 사용해 가져온 email 요소에 들어온 값이 해당하는 정
     });
 
 
-버튼 클릭시 submit 이벤트를 사용하기 위해 버튼이 아닌 form 요소를 가져와서 사용
-기존에 있는 기능을 사용하지 않기 위해 preventDefault를 사용
-이메일에 작성된 값과 password에 작성된 값을 객체로 만들어 해당하는 객체와 조건 객체를 비교해서 참인 경우 window.location.href를 통해 이동
+버튼 클릭시 submit 이벤트를 사용하기 위해 버튼이 아닌 form 요소를 가져와서 사용<br>
+기존에 있는 기능을 사용하지 않기 위해 preventDefault를 사용<br>
+이메일에 작성된 값과 password에 작성된 값을 객체로 만들어 해당하는 객체와 조건 객체를 비교해서 참인 경우 window.location.href를 통해 이동<br>
 
     
 
