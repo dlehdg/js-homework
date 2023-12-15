@@ -35,12 +35,10 @@ function pwReg(text) {
 email.addEventListener("input", (e) => {
   // if (e.target.value !== "") {
   if (emailReg(e.target.value)) {
-    console.log(emailReg(e.target.value) === true ? "참" : "거짓");
     email.classList.remove("is--invalid");
   }
   // (!pwReg(e.target.value))
   else if (!emailReg(e.target.value)) {
-    console.log(emailReg(e.target.value));
     email.classList.add("is--invalid");
   }
 });
