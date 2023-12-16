@@ -25,17 +25,22 @@ function handleClick(e) {
     removeClass(item, "is-active");
   });
 
-  visualImage.src = `./assets/${data[index - 1].name}.jpeg`;
+  // visualImage.src = `./assets/${data[index - 1].name}.jpeg`;
   visualImage.alt = data[index - 1].alt;
 
-  nicName.innerHTML = data[index - 1].name;
+  setImage(data[index - 1]);
 
-  document.body.style.background = `linear-gradient(to bottom, ${
-    data[index - 1].color[0]
-  },${data[index - 1].color[1]}
-)`;
+  // nicName.innerHTML = data[index - 1].name;
 
-  console.log(`${data[index - 1].color[0]}`);
+  setNameText(data[index - 1]);
+
+  //   document.body.style.background = `linear-gradient(to bottom, ${
+  //     data[index - 1].color[0]
+  //   },${data[index - 1].color[1]}
+  // )`;
+
+  setBgColor(data[index - 1].color[0], data[index - 1].color[1]);
+  // console.log(`${data[index - 1].color[0]}`);
   addClass(li, "is-active");
 }
 
@@ -70,6 +75,17 @@ function removeClass(node, className) {
   return node.classList.remove(className);
 }
 
-function bgColorChanged(index) {}
+function setBgColor(color1, color2) {
+  return (document.body.style.background = `linear-gradient(to bottom, ${color1}, ${color2})`);
+}
+
+function setImage(src) {
+  visualImage.src = `./assets/${src.name}.jpeg`;
+  // visualImage.alt = data[index - 1].alt;
+}
+
+function setNameText(index) {
+  nicName.innerHTML = index.name;
+}
 
 navigation.addEventListener("click", handleClick);
