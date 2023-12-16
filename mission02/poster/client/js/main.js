@@ -1,15 +1,14 @@
 /* 
-
 1. 클릭 이벤트 활성화
 2. nav 클릭시 배경 색상 변경
 3. 이미지 변경
 4. 텍스트 변경
 5. 함수 분리
-
 */
 
 const navigation = document.querySelector("ul");
 const visualImage = getNode(".visual img");
+const nicName = getNode(".nickName");
 
 function handleClick(e) {
   e.preventDefault();
@@ -18,7 +17,6 @@ function handleClick(e) {
 
   if (!li) return;
 
-  console.log(li);
   let index = li.dataset.index;
 
   let arr = [...navigation.children];
@@ -27,8 +25,21 @@ function handleClick(e) {
     removeClass(item, "is-active");
   });
 
+  visualImage.src = `./assets/${data[index - 1].name}.jpeg`;
+  visualImage.alt = data[index - 1].alt;
+
+  nicName.innerHTML = data[index - 1].name;
+
+  document.body.style.background = `linear-gradient(to bottom, ${
+    data[index - 1].color[0]
+  },${data[index - 1].color[1]}
+)`;
+
+  console.log(`${data[index - 1].color[0]}`);
   addClass(li, "is-active");
 }
+
+// 함수 리스트
 
 function getNode(node) {
   if (typeof node !== "string") {
