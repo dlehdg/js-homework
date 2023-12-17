@@ -1,3 +1,18 @@
+## 🕛 2주차 과제 엘리멘탈 포스터 페이지 구현
+
+
+--- 
+### 썸네일 이미지를 클릭하면 메인 이미지와 배경이 바뀔 수 있도록 코드 로직을 작성해주세요.
+
+
+---
+
+<img alt="Html" src ="https://img.shields.io/badge/HTML5-E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=white"/> <img alt="Css" src ="https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=white"/>  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
+<br>
+
+---
+
+
 <h2> 요구사항 </h2>
 
 - [x] 이벤트 처리 방식을 사용하여 클릭 이벤트를 걸어주세요 - 이벤트 위임, 반복문
